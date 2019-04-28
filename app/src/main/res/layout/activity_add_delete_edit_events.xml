@@ -41,7 +41,7 @@
         android:layout_marginTop="200dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Time (h:mm)"
+        android:hint="Time (h)"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
 
