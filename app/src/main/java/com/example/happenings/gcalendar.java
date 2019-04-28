@@ -19,30 +19,30 @@ public class gcalendar extends AppCompatActivity {
     EditText one,two,three,starthour,startminute,endhour,endminute;
     String a,b,c,d,e,f,g;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gcalendar);
         one=findViewById(R.id.one);
         two=findViewById(R.id.two);
         three=findViewById(R.id.three);
-starthour=findViewById(R.id.starthour);
-startminute=findViewById(R.id.startminute);
-endhour=findViewById(R.id.endhour);
-endminute=findViewById(R.id.endminute);
-
-
+        starthour=findViewById(R.id.starthour);
+        startminute=findViewById(R.id.startminute);
+        endhour=findViewById(R.id.endhour);
+        endminute=findViewById(R.id.endminute);
     }
 
 
-    public void hardik(View view) {
+    public void hardik(View view)
+    {
 
         a=one.getText().toString();
         b=two.getText().toString();
         c=three.getText().toString();
-d=starthour.getText().toString();
-e=startminute.getText().toString();
-f=endhour.getText().toString();
-g=endminute.getText().toString();
+        d=starthour.getText().toString();
+        e=startminute.getText().toString();
+        f=endhour.getText().toString();
+        g=endminute.getText().toString();
 
         Intent intent = new Intent(Intent.ACTION_INSERT);
         intent.setType("vnd.android.cursor.item/event");
@@ -55,7 +55,7 @@ g=endminute.getText().toString();
         intent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, beginTime.getTimeInMillis());
         intent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME,endTime.getTimeInMillis());
         intent.putExtra(CalendarContract.EXTRA_EVENT_ALL_DAY, true);
-intent.putExtra(CalendarContract.Events.EVENT_LOCATION, "The gym");
+        intent.putExtra(CalendarContract.Events.EVENT_LOCATION, "The gym");
         intent.putExtra(CalendarContract.Events.TITLE, a);
         intent.putExtra(CalendarContract.Events.DESCRIPTION, b);
         intent.putExtra(CalendarContract.Events.EVENT_LOCATION, c);
