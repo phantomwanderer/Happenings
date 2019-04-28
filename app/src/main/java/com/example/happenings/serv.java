@@ -45,8 +45,8 @@ public class serv extends Service {
         //2.Build Notification with NotificationCompat.Builder
 
         Notification notification = new NotificationCompat.Builder(this, DEFAULT_CHANNEL_ID)
-                .setStyle(new NotificationCompat.BigTextStyle().bigText(event.getString("Description and Venue","")))
-                .setContentTitle(event.getString("Event Name",""))   //Set the title of Notification
+                .setStyle(new NotificationCompat.BigTextStyle().bigText(event.getString("Description and Venue","Happenings")))
+                .setContentTitle(event.getString("Event Name","Welcome"))   //Set the title of Notification
                 .setContentText(event.getString("Time",""))    //Set the text for notification
                 .setSmallIcon(R.drawable.ic_launcher_background)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)

@@ -1,42 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClubExecPage">
+    tools:context=".ClubExecPage"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ADFF2F">
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="116dp"
+       android:background="@color/colorPrimaryDark"
         android:text="Add Event"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="196dp"
+android:layout_marginTop="30dp"
+        android:background="@color/colorPrimaryDark"
         android:text="Delete Event"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+         />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="296dp"
+android:layout_marginTop="30dp"
+        android:background="@color/colorPrimaryDark"
 
         android:text="Edit Event"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        />
+</LinearLayout>
