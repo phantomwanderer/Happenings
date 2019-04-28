@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_events"
+            android:title="Clubs" />
+        <item
+            android:id="@+id/nav_preferences"
+            android:title="Preferences" />
+
+
+        </group>
+
+    <item android:title="For Clubs">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:title="Login" />
+            </menu>
+    </item>
+
+</menu>
