@@ -37,7 +37,7 @@ SharedPreferences preference;
         saver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if((e2.getText().toString()!= "30/04/2019") && (e2.getText().toString()!= "01/05/2019") && (e2.getText().toString()!= "02/05/2019") && (e2.getText().toString()!= "03/05/2019"))
+                if(!(e2.getText().toString().equalsIgnoreCase("30/04/2019")) && !(e2.getText().toString().equalsIgnoreCase("01/05/2019")) && !(e2.getText().toString().equalsIgnoreCase("02/05/2019") ) && !(e2.getText().toString().equalsIgnoreCase("03/05/2019")))
                 {
                     preference = getSharedPreferences("pref", Context.MODE_PRIVATE);
                     SharedPreferences.Editor edit = preference.edit();
